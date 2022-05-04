@@ -1,5 +1,5 @@
 import "./common.css";
-import "./footer.css"
+import "./css/footer.css"
 
 
 function Footer_part()

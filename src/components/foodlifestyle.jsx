@@ -1,4 +1,5 @@
-import "./foodlifestyle.css"
+
+import "./css/foodlifestyle.css"
 import "./common.css"
 function FoodlifeStyletip()
 {

@@ -7,7 +7,7 @@ import fitmealsslider1 from "../assets/images/fitmealsslider1.jpg"
 import fitmealsslider3 from "../assets/images/SLIDE_03.jpg"
 import fitmealsslider2 from "../assets/images/SLIDE_02.jpg"
 import fitmealsslider4 from "../assets/images/SLIDE_04.jpg";
-import  "./slider.css"
+import  "./css/slider.css"
 
 
 

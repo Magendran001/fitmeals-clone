@@ -1,4 +1,6 @@
-import "./benefitsfood.css";
+
+import "./css/benefitsfood.css"
+
 import "./common.css"
 function Benefitsfoodmeal()
 {

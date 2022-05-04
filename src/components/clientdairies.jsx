@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import "./clientdiaries.css"
+
+import "./css/clientdiaries.css"
 
 
 

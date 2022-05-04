@@ -1,4 +1,5 @@
-import "./body.css"
+
+import "./css/body.css"
 import Slider from "./slider";
 import FoodlifeStyletip from "./foodlifestyle";
 import Benefitsfoodmeal from "./benefitsfoodstyle";

@@ -1,5 +1,5 @@
-import "./mealplan.css"
-import "./common.css"
+import "./css/mealplan.css"
+import "./css/common.css"
 function Mealplan()
 {
     return (<div id="meal_plan_full_part">
