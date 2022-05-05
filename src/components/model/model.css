@@ -46,12 +46,41 @@
     height: 40px;
     border-radius:50px;
     border: none;
+    
    }
-   .meals_plan_hover button:hover{
+
+   .meals_plan_hover a{
+
+      text-decoration: none;
+      
+     color: black;
+     
+   }
+   .link_to_prdt_page{
+    width: 100%;
+    height: 40px;
+    border-radius:50px;
+    border: none;
+    
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     
+     
+
+   }
+   .meals_plan_hover .link_to_prdt_page:hover{
 
     background-color: rgb(7, 196, 7);
-    color:  white;
+      
+
    }
+   .link_to_prdt_page:hover a{
+        
+      color: white;
+   }
+   
+   
    
    .arrowleft_shown{
      

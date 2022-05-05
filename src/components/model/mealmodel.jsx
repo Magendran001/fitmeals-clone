@@ -1,16 +1,26 @@
-import "./model.css"
+import "./model.css";
+import { mycontext } from "../../redux/contextprovider";
 import { BiChevronRight } from "react-icons/bi";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
 function Mealmodel()
 {
+
+    
     return (<div className="meal_plans_model">Meal Plans<span className="arrowleft_shown"><BiChevronRight/></span> 
 
           <div className="meals_plan_hover">
               <div>
-              <div><button>Weight Loss Meal Plan</button></div>
-              <div><button>Maintanance Meal Plan </button></div>
-              <div> <button>Atheletic Meal Plan </button></div>
-              <div><button>Keto Meal Plan </button></div>
-              <div> <button>Transformation challenges </button></div>
+              <div className="link_to_prdt_page"><Link to="/">Weight Loss Meal Plan</Link></div>
+              <div className="link_to_prdt_page"><Link to="/">Maintanance Meal Plan</Link></div>
+              <div className="link_to_prdt_page"><Link to="/">Atheletic Meal Plan</Link></div>
+              <div className="link_to_prdt_page"><Link to="/"> Keto Meal Plan</Link></div>
+              <div className="link_to_prdt_page"><Link to="/">Transformation challenges</Link></div>
+              
+              
+              
+             
+               
               </div>
           </div>
     </div>)
@@ -18,14 +28,17 @@ function Mealmodel()
 
 function Productsmodel()
 {
+    let {setchange} = useContext(mycontext);
     return (<div className="meal_plans_model">Products<span className="arrowleft_shown"><BiChevronRight/></span>
 
           <div className="meals_plan_hover">
               <div>
-              <div><button>Vegan Sweets</button></div>
-              <div><button> Low-Cal Sauces </button></div>
-              <div> <button>Nut Butters </button></div>
-              <div><button>Fresh Bakes </button></div>
+              <div className="link_to_prdt_page"><Link to="/productpage/vegan sweets">Vegan Sweets</Link></div>
+              <div className="link_to_prdt_page"><Link to="/productpage/Low Calorie Sauces">  Low-Cal Sauces</Link></div>
+              <div className="link_to_prdt_page"> <Link to="/productpage/Nut butters">Nut Butters</Link></div>
+              <div className="link_to_prdt_page"><Link to="/productpage/Fresh Bakes">Fresh Bakes</Link></div>
+            
+              
               
               </div>
           </div>

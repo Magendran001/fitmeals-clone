@@ -7,7 +7,10 @@
     height: 800px;
     background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2019/10/veg_pattern_01.png?id=10839");
      display: flex;
-     background-color: green;
+     background-color: rgb(136,184,54);
+     /* background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2019/10/nutrion-left.png");
+    background-repeat: no-repeat;
+     */
     
     
 }
@@ -17,6 +20,8 @@
     height: 650px;
     background-color: white;
     border-radius: 20px;
+    
+   
     
   
 
