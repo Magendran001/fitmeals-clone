@@ -2,20 +2,54 @@ import "./css/productpage.css";
 import "./common.css"
 import { IoIosSearch } from "react-icons/io";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams,Link } from "react-router-dom";
+import { BiChevronRight } from "react-icons/bi";
+
+
 function Productpage()
 {
     let {name} = useParams();
-    console.log(name)
+    console.log(name,"params")
+
+   
 
      let [products,setproduct] = useState([]);
       let [currentpagetitle,setcurrentpagetitle] = useState(name);
+      let [typeofproduct,settypeofproduct] = useState([]);
+      let[productpage,setproductpage] = useState("allproducts")
 
       let [sort,sortproduct] = useState([]);
 
+     
       useEffect(()=>{
             
-        setcurrentpagetitle(name)
+        async function getallprdtdata()
+        {
+            let x = await fetch(`http://localhost:9083/${productpage}`);
+             let y = await x.json();
+             setproduct(y)
+             console.log("jj")
+           
+        }
+        getallprdtdata()
+
+      },[productpage])
+
+      useEffect(()=>{
+            
+          if(name =="allproducts")
+          {
+              
+            setproductpage(((productpage)=> {return productpage}));
+              
+            
+          }
+          else{
+
+        setcurrentpagetitle(name);
+
+}
+       
 
        },[name])
       
@@ -26,11 +60,14 @@ function Productpage()
             let x = await fetch(`http://localhost:9083/products/${currentpagetitle}`);
              let y = await x.json();
              setproduct(y)
-            
+            console.log(products,"kkkkkkkk")
         }
         getdata()
 
       },[currentpagetitle])
+
+      
+      
      
    
         
@@ -47,6 +84,7 @@ function Productpage()
 
       }),[sort])
 
+      
 
 
 
@@ -86,14 +124,15 @@ function Productpage()
                     </div>
                     <div className="product_categories">
                         <h1>Product categories</h1>
-                        <div>Diet Plans</div>
-                        <div>Meal Plans</div>
-                        <div className="products_list"> Products
-                            <div>Dishes</div>
-                            <div>Fresh Bakes</div>
-                            <div>Low Calorie Sauces</div>
-                            <div>Nut Butters</div>
-                            <div>Vegan sweets</div>
+                       
+                        <div  >  <span className="product_arrow_color" ><BiChevronRight/></span>Diet Plans</div>
+                        <div> <span  className="product_arrow_color"><BiChevronRight/></span>Meal Plans</div>
+                        <div className="products_list" >    <span className="product_arrow_color"><BiChevronRight/></span><Link to="/productpage/allproducts">Products</Link>
+                            <div> <span className="product_arrow_color" ><BiChevronRight/></span><Link to="/productpage/dishes">Dishes</Link></div>
+                            <div><span className="product_arrow_color" ><BiChevronRight/></span><Link to="/productpage/Fresh Bakes">Fresh Bakes</Link></div>
+                            <div><span className="product_arrow_color" ><BiChevronRight/></span><Link to="/productpage/Low Calorie Sauces">  Low-Cal Sauces</Link></div>
+                            <div><span className="product_arrow_color"><BiChevronRight/></span> <Link to="/productpage/Nut butters">Nut Butters</Link></div>
+                            <div><span className="product_arrow_color" ><BiChevronRight/></span><Link to="/productpage/vegan sweets">Vegan Sweets</Link></div>
 
                         </div>
                     </div>

@@ -196,3 +196,22 @@
     text-overflow: "----"; 
 
 }
+
+.product_arrow_color{
+    color: green;
+    font-size: 20px;
+    position: relative;
+    padding-right: 6px;
+    
+    bottom: -3px;
+}
+.products_list a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.products_list a:hover{
+    color: green;
+    font-size: large;
+}

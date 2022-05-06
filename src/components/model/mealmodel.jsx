@@ -2,6 +2,7 @@ import "./model.css";
 
 import { BiChevronRight } from "react-icons/bi";
 
+
 import { Link } from "react-router-dom";
 function Mealmodel()
 {
@@ -9,10 +10,10 @@ function Mealmodel()
 
           <div className="meals_plan_hover">
               <div>
-              <div className="link_to_prdt_page"><Link to="/">Weight Loss Meal Plan</Link></div>
-              <div className="link_to_prdt_page"><Link to="/">Maintanance Meal Plan</Link></div>
-              <div className="link_to_prdt_page"><Link to="/">Atheletic Meal Plan</Link></div>
-              <div className="link_to_prdt_page"><Link to="/"> Keto Meal Plan</Link></div>
+              <div className="link_to_prdt_page"><Link to="/weightlossmealplan">Weight Loss Meal Plan</Link></div>
+              <div className="link_to_prdt_page"><Link to="/maintenancemealplan">Maintanance Meal Plan</Link></div>
+              <div className="link_to_prdt_page"><Link to="/athleticmealplan">Atheletic Meal Plan</Link></div>
+              <div className="link_to_prdt_page"><Link to="/Ketomealplan"> Keto Meal Plan</Link></div>
               <div className="link_to_prdt_page"><Link to="/">Transformation challenges</Link></div>
               </div>
           </div>

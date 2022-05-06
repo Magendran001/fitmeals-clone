@@ -10,6 +10,13 @@ import {
   Link
 } from "react-router-dom";
 import Productpage from './components/productpage';
+import { WeightLossMealPlan } from './components/mealplans/weightlossmealplan';
+import { MaintenanceMealPlan } from "./components/mealplans/maintenancemealplan"
+import { AthleticPlan } from "./components/mealplans/athleticmealplan"
+import { KetoMealPlan } from "./components/mealplans/ketomealplan.jsx"
+
+
+
 
 function App() {
   return (
@@ -18,7 +25,15 @@ function App() {
 
       <Routes>
         <Route path='/' element={<><Bodypart /></>}></Route>
+        <Route path='/productpage' element={<><Productpage /></>}></Route>
         <Route path='/productpage/:name' element={<><Productpage /></>}></Route>
+        <Route path='/weightlossmealplan' element={<WeightLossMealPlan></WeightLossMealPlan>} />
+        <Route path='/maintenancemealplan' element={<MaintenanceMealPlan></MaintenanceMealPlan>} />
+        <Route path='/athleticmealplan' element={<AthleticPlan></AthleticPlan>} />
+        <Route path='/Ketomealplan' element={<KetoMealPlan></KetoMealPlan>} />
+
+
+
 
       </Routes>
 
