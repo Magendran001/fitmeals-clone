@@ -53,10 +53,11 @@ function Header_fit_meals()
            </div>
            <div id='fit_meals_header_row2'>
                  <div>
-                      <img src={website_icon} alt="" />
+                
+                     <Link to="/"><img  src={website_icon} alt="" /></Link> 
                  </div>
                  <div className='fit_meals_header_row2_home_about'>
-                     <div className='static_green' >Home
+                     <div className='static_green' ><Link style={{color:"green"}} to="/" >Home</Link>
                        
                      </div>
                      <div className='green_hover' >
