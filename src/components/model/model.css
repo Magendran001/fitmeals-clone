@@ -50,8 +50,8 @@
     height: 40px;
     border-radius:50px;
     border: none;
-    
    }
+<<<<<<< HEAD
 
    .meals_plan_hover a{
 
@@ -90,6 +90,13 @@
    }
    
    
+=======
+   .meals_plan_hover button:hover{
+
+    background-color: rgb(7, 196, 7);
+    color:  white;
+   }
+>>>>>>> parent of 7075d97 (product page done)
    
    .arrowleft_shown{
      

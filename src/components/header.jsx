@@ -11,13 +11,10 @@ import "./css/header.css"
 import Mealmodel from './model/mealmodel';
 import { Productsmodel } from './model/mealmodel';
 import { Aboutmodel } from './model/mealmodel';
-import { useContext, useState } from 'react';
-import { mycontext } from '../redux/contextprovider';
-import { Link } from "react-router-dom";
+import { useState } from 'react';
 function Header_fit_meals()
 {
      
-     let {setchange} = useContext(mycontext)
      let [search,setsearch]= useState(false)
         console.log(search)
            
@@ -58,7 +55,7 @@ function Header_fit_meals()
                      <Link to="/"><img  src={website_icon} alt="" /></Link> 
                  </div>
                  <div className='fit_meals_header_row2_home_about'>
-                     <div  onClick={()=>{setchange("home")}} ><Link style={{color:"green"}} to="/" >Home</Link>
+                     <div className='static_green' >Home
                        
                      </div>
                      <div className='green_hover' >
