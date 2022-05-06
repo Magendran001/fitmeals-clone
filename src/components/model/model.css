@@ -1,7 +1,7 @@
 .meal_plans_model{
    
     position: relative;
-    z-index: 2;
+    
 }
 .meals_plan_hover{
         visibility: hidden;
@@ -15,7 +15,7 @@
     left: -100px;
     z-index: 3;
     
-    border: 2px solid red;
+    
     
     
    
@@ -57,6 +57,8 @@
       text-decoration: none;
       
      color: black;
+     width: 100%;
+     height: 100%;
      
    }
    .link_to_prdt_page{
@@ -71,7 +73,7 @@
       display: block;
       padding: 10px;
       margin: 10px 0px;
-
+         box-sizing: border-box;
     
     text-align: center;
 
@@ -86,7 +88,7 @@
    }
    .link_to_prdt_page:hover a{
         
-      color: white;
+      color: black;
    }
    
    
@@ -97,3 +99,44 @@
        top:3px
    }
    
+
+
+   .meals_plan_hover a{
+
+    text-decoration: none;
+    
+   color: black;
+   
+ }
+ .link_to_prdt_page{
+  width: 100%;
+  height: 40px;
+  border-radius:50px;
+  border: none;
+  
+  display: flex;
+  justify-content: center;
+   align-items: center;
+   
+   
+
+ }
+ 
+ .meals_plan_hover .link_to_prdt_page:hover{
+
+  background-color: rgb(7, 196, 7);
+  color:  white;
+    
+
+ }
+ .link_to_prdt_page:hover a{
+      
+    color: white;
+ }
+ 
+ 
+ 
+ .arrowleft_shown{
+   
+     position: absolute;
+ }
