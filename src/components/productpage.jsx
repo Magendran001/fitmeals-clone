@@ -11,13 +11,14 @@ function Productpage()
      let [products,setproduct] = useState([]);
       let [currentpagetitle,setcurrentpagetitle] = useState(name);
 
+      let [sort,sortproduct] = useState([]);
 
-       useEffect(()=>{
+      useEffect(()=>{
             
         setcurrentpagetitle(name)
 
        },[name])
-
+      
       useEffect(()=>{
             
         async function getdata()
@@ -30,6 +31,43 @@ function Productpage()
         getdata()
 
       },[currentpagetitle])
+     
+   
+        
+      useEffect((()=>{
+
+        async function getsortdata()
+        {
+            let x = await fetch(`http://localhost:9083/products/${currentpagetitle}/${sort}`);
+             let y = await x.json();
+             setproduct(y)
+            
+        }   
+        getsortdata()
+
+      }),[sort])
+
+
+
+
+       function sortingproductvalue(e)
+       {
+           
+            
+          let {value} = e.target;
+
+
+           if(value=="high")
+           {
+            sortproduct(-1)
+           }
+           if(value =="low")
+           {
+            sortproduct(1)
+           }
+           
+           
+       }
 
 
 
@@ -69,6 +107,16 @@ function Productpage()
                     <div className="sorting_div">
                         <div>Showing 1–6 of 10 result</div>
                         <div>Default sorting</div>
+                        <div>
+                            <select name="sorting_prdt" className="sorting_product" onChange={(e)=>{sortingproductvalue(e)}}>
+                                <option value="">Default sorting</option>
+                                <option value="low">Sort by price:low to high</option>
+                                <option value="high">Sort by price:high to low</option>
+                                
+                            </select>
+                            
+                        </div>
+                       
                     </div>
                     <div className="display_product_categories_right">
                         {products.map((ele)=>{ return < Eachproduct data={ele} />}) }
