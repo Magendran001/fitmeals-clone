@@ -1,7 +1,7 @@
 import "./model.css";
-import { mycontext } from "../../redux/contextprovider";
+
 import { BiChevronRight } from "react-icons/bi";
-import { useContext } from "react";
+
 import { Link } from "react-router-dom";
 function Mealmodel()
 {
@@ -28,7 +28,7 @@ function Mealmodel()
 
 function Productsmodel()
 {
-    let {setchange} = useContext(mycontext);
+  
     return (<div className="meal_plans_model">Products<span className="arrowleft_shown"><BiChevronRight/></span>
 
           <div className="meals_plan_hover">
