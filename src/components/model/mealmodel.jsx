@@ -9,11 +9,11 @@ function Mealmodel()
 
           <div className="meals_plan_hover">
               <div>
-              <div><button>Weight Loss Meal Plan</button></div>
-              <div><button>Maintanance Meal Plan </button></div>
-              <div> <button>Atheletic Meal Plan </button></div>
-              <div><button>Keto Meal Plan </button></div>
-              <div> <button>Transformation challenges </button></div>
+              <div className="link_to_prdt_page"><Link to="/">Weight Loss Meal Plan</Link></div>
+              <div className="link_to_prdt_page"><Link to="/">Maintanance Meal Plan</Link></div>
+              <div className="link_to_prdt_page"><Link to="/">Atheletic Meal Plan</Link></div>
+              <div className="link_to_prdt_page"><Link to="/"> Keto Meal Plan</Link></div>
+              <div className="link_to_prdt_page"><Link to="/">Transformation challenges</Link></div>
               </div>
           </div>
     </div>)
@@ -26,10 +26,10 @@ function Productsmodel()
 
           <div className="meals_plan_hover">
               <div >
-              <Link className="link_to_prdt_page" to="/productpage/vegan sweets">Vegan Sweets</Link>
-              <Link className="link_to_prdt_page" to="/productpage/Low Calorie Sauces">  Low-Cal Sauces</Link>
-               <Link className="link_to_prdt_page" to="/productpage/Nut butters">Nut Butters</Link>
-              <Link  className="link_to_prdt_page" to="/productpage/Fresh Bakes">Fresh Bakes</Link>
+              <div className="link_to_prdt_page"><Link to="/productpage/vegan sweets">Vegan Sweets</Link></div>
+              <div className="link_to_prdt_page"><Link to="/productpage/Low Calorie Sauces">  Low-Cal Sauces</Link></div>
+              <div className="link_to_prdt_page"> <Link to="/productpage/Nut butters">Nut Butters</Link></div>
+              <div className="link_to_prdt_page"><Link to="/productpage/Fresh Bakes">Fresh Bakes</Link></div>
             
               
               
