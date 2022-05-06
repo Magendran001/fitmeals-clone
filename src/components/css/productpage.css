@@ -118,6 +118,19 @@
     
 
 }
+.sorting_product{
+    border: 2px solid rgb(21, 20, 20);
+    height: 60px;
+    width: 200px;
+    border: none;
+    padding: 0px 10px;
+    background-color: transparent;
+}
+.sorting_product option,select{
+    font-size: 18px;
+    border: 1px solid red;
+    
+}
 .display_product_categories_right{
     display: grid;
     grid-template-columns: repeat(3,1fr);
