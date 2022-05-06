@@ -30,7 +30,7 @@ function Header_fit_meals()
 
     return (
       <div id='fit_meals_total_header_part'>
-    <div className=''>
+    
            
            <div id="fit_meals_header_row1">
                    <div className='center_of_content'>
@@ -55,7 +55,7 @@ function Header_fit_meals()
            </div>
            <div id='fit_meals_header_row2'>
                  <div>
-                      <img src={website_icon} alt="" />
+                     <Link to="/"><img  src={website_icon} alt="" /></Link> 
                  </div>
                  <div className='fit_meals_header_row2_home_about'>
                      <div  onClick={()=>{setchange("home")}} ><Link style={{color:"green"}} to="/" >Home</Link>
@@ -78,7 +78,7 @@ function Header_fit_meals()
            </div>
              
 
-    </div></div>)
+    </div>)
 }
 
 
