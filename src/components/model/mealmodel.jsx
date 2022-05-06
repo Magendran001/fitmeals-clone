@@ -1,13 +1,8 @@
-<<<<<<< HEAD
 import "./model.css";
 
 import { BiChevronRight } from "react-icons/bi";
 
 import { Link } from "react-router-dom";
-=======
-import "./model.css"
-import { BiChevronRight } from "react-icons/bi";
->>>>>>> parent of 7075d97 (product page done)
 function Mealmodel()
 {
     return (<div className="meal_plans_model">Meal Plans<span className="arrowleft_shown"><BiChevronRight/></span> 
@@ -26,7 +21,6 @@ function Mealmodel()
 
 function Productsmodel()
 {
-<<<<<<< HEAD
   
     return (<div className="meal_plans_model">Products<span className="arrowleft_shown"><BiChevronRight/></span>
 
@@ -38,16 +32,6 @@ function Productsmodel()
               <Link  className="link_to_prdt_page" to="/productpage/Fresh Bakes">Fresh Bakes</Link>
             
               
-=======
-    return (<div className="meal_plans_model">Products<span className="arrowleft_shown"><BiChevronRight/></span>
-
-          <div className="meals_plan_hover">
-              <div>
-              <div><button>Vegan Sweets</button></div>
-              <div><button> Low-Cal Sauces </button></div>
-              <div> <button>Nut Butters </button></div>
-              <div><button>Fresh Bakes </button></div>
->>>>>>> parent of 7075d97 (product page done)
               
               </div>
           </div>
