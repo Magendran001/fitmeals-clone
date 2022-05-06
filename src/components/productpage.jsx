@@ -5,17 +5,11 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 function Productpage()
 {
-      
-     
-
     let {name} = useParams();
     console.log(name)
 
      let [products,setproduct] = useState([]);
       let [currentpagetitle,setcurrentpagetitle] = useState(name);
-
-      let [sort,sortproduct] = useState([]);
-      
 
 
        useEffect(()=>{
@@ -32,45 +26,11 @@ function Productpage()
              let y = await x.json();
              setproduct(y)
             
-        }   
+        }
         getdata()
 
       },[currentpagetitle])
-        
-      useEffect((()=>{
 
-        async function getsortdata()
-        {
-            let x = await fetch(`http://localhost:9083/products/${currentpagetitle}/${sort}`);
-             let y = await x.json();
-             setproduct(y)
-            
-        }   
-        getsortdata()
-
-      }),[sort])
-
-
-
-
-       function sortingproductvalue(e)
-       {
-           
-            
-          let {value} = e.target;
-
-
-           if(value=="high")
-           {
-            sortproduct(-1)
-           }
-           if(value =="low")
-           {
-            sortproduct(1)
-           }
-           
-           
-       }
 
 
     return (<div id="total_product_page">
@@ -108,16 +68,7 @@ function Productpage()
                 <div className="display_product_categories_right_whole">
                     <div className="sorting_div">
                         <div>Showing 1–6 of 10 result</div>
-                        <div>
-                            <select name="sorting_prdt" className="sorting_product" onChange={(e)=>{sortingproductvalue(e)}}>
-                                <option value="">Default sorting</option>
-                                <option value="low">Sort by price:low to high</option>
-                                <option value="high">Sort by price:high to low</option>
-                                
-                            </select>
-                            
-                        </div>
-                       
+                        <div>Default sorting</div>
                     </div>
                     <div className="display_product_categories_right">
                         {products.map((ele)=>{ return < Eachproduct data={ele} />}) }
@@ -136,7 +87,7 @@ function Productpage()
  function Eachproduct({data})
  {
      return (<div className="display_product_categories_right_each">
-     <div> <img src={data.image} alt="productimage..." /></div>
+     <div> <img src={data.image} alt="" /></div>
      <div><h2>{data.title}</h2></div>
      <div><p className="description_prdt">{data.description}</p></div>
      

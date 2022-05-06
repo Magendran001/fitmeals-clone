@@ -103,6 +103,7 @@
    font-weight: 600;
    line-height: 20px;
    font-size: 16px;
+<<<<<<< HEAD
   
    
   
@@ -116,15 +117,18 @@
 
   
    
+=======
+>>>>>>> parent of 633c22d (update changes)
 }
 #fit_meals_header_row2>div{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
     margin: 0px 10px;
+<<<<<<< HEAD
     
     
+=======
 }
 #fit_meals_header_row2>div img{
     max-height: 41px;
