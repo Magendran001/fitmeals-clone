@@ -32,11 +32,11 @@ function Productsmodel()
     return (<div className="meal_plans_model">Products<span className="arrowleft_shown"><BiChevronRight/></span>
 
           <div className="meals_plan_hover">
-              <div>
-              <div className="link_to_prdt_page"><Link to="/productpage/vegan sweets">Vegan Sweets</Link></div>
-              <div className="link_to_prdt_page"><Link to="/productpage/Low Calorie Sauces">  Low-Cal Sauces</Link></div>
-              <div className="link_to_prdt_page"> <Link to="/productpage/Nut butters">Nut Butters</Link></div>
-              <div className="link_to_prdt_page"><Link to="/productpage/Fresh Bakes">Fresh Bakes</Link></div>
+              <div >
+              <Link className="link_to_prdt_page" to="/productpage/vegan sweets">Vegan Sweets</Link>
+              <Link className="link_to_prdt_page" to="/productpage/Low Calorie Sauces">  Low-Cal Sauces</Link>
+               <Link className="link_to_prdt_page" to="/productpage/Nut butters">Nut Butters</Link>
+              <Link  className="link_to_prdt_page" to="/productpage/Fresh Bakes">Fresh Bakes</Link>
             
               
               
