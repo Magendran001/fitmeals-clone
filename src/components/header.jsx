@@ -64,7 +64,7 @@ function Header_fit_meals()
 
                      {<Mealmodel/>}
                      </div>
-                     <div className='green_hover'>Health coaching</div>
+                     <div className='green_hover'><Link to ="/healthcoaching">Health coaching</Link></div>
                      <div className='green_hover'>{<Productsmodel/>}</div>
                      <div className='green_hover'>Blog</div>
                      <div className='green_hover'>

@@ -14,6 +14,8 @@ import { WeightLossMealPlan } from './components/mealplans/weightlossmealplan';
 import { MaintenanceMealPlan } from "./components/mealplans/maintenancemealplan"
 import { AthleticPlan } from "./components/mealplans/athleticmealplan"
 import { KetoMealPlan } from "./components/mealplans/ketomealplan.jsx"
+import { Health_coaching } from "./components/Health_coaching.jsx";
+
 
 
 
@@ -32,6 +34,7 @@ function App() {
         <Route path='/athleticmealplan' element={<AthleticPlan></AthleticPlan>} />
         <Route path='/Ketomealplan' element={<KetoMealPlan></KetoMealPlan>} />
 
+        <Route path='/healthcoaching' element={< Health_coaching />} />
 
 
 
