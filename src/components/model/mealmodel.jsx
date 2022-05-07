@@ -27,9 +27,9 @@ function Productsmodel()
 
           <div className="meals_plan_hover">
               <div >
-              <div className="link_to_prdt_page"><Link to="/productpage/vegan sweets">Vegan Sweets</Link></div>
+              <div className="link_to_prdt_page"><Link to="/productpage/Vegan Sweets">Vegan Sweets</Link></div>
               <div className="link_to_prdt_page"><Link to="/productpage/Low Calorie Sauces">  Low-Cal Sauces</Link></div>
-              <div className="link_to_prdt_page"> <Link to="/productpage/Nut butters">Nut Butters</Link></div>
+              <div className="link_to_prdt_page"> <Link to="/productpage/Nut Butters">Nut Butters</Link></div>
               <div className="link_to_prdt_page"><Link to="/productpage/Fresh Bakes">Fresh Bakes</Link></div>
             
               
