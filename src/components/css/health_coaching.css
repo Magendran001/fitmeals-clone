@@ -73,6 +73,8 @@
     color:#8ec038;
 }
 .subTxt{
+    margin-left:25px;
+    width:450px;
     font-family: 'Open Sans',sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -99,7 +101,7 @@
 }
 .txtCalHead_service{
     text-align: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: grid;
     justify-content: center;
 }
@@ -134,6 +136,7 @@
 .box_service{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top:40px;
 }
 .serBox_3{
     margin-left: 35px;
@@ -160,6 +163,7 @@
 }
 .txtSer_box>p{
     font-size: 14px;
+    text-align: center;
 }
 .button_RM{
     height:35px;
@@ -230,8 +234,14 @@
     /* border: 1px solid red; */
     width:280px;
 }
+.subTxt_Wrk h3{
+    font-size: 16px;
+    color:black;
+    margin-top:20px;
+}
 .subTxt_Wrk>p{
-    font-size: 12px;
+    font-size: 14px;
+    text-align: center;
 }
 .hC_achiev{
     height:35px;
@@ -245,8 +255,8 @@
 }
 .achiev_gridCss{
     margin:auto;
-    margin-top: -180px;
-    font-size: 50px;
+    margin-top: -130px;
+    font-size: 40px;
     font-weight: bold;
     color: #8ec038;
 }
@@ -274,12 +284,9 @@
     /* border: 1px solid red; */
     width:280px;
     color:white;
-    margin-top: -50px;
+    margin-top: -45px;
     padding: 2%;
-}
-.subTxt_Ach h3{
-   border: 2px solid red;
-
+    font-size: 16px;
 }
 .hC_gplayDet{
     margin: auto;
@@ -289,15 +296,14 @@
 .hC_appDet{
     display: flex;
     flex-wrap: wrap;
-
     /* gap:30px; */
     margin: auto;
     margin-left: 80px;
+    margin-top: 30px;
 }
 .imgApp_det{
     width:800px;
     margin-top: 5%;
-    margin-left: 50px;
     /* border: 1px solid red; */
 }
 .sliderImg_app{
@@ -308,4 +314,5 @@
 }
 .btmSlide{
     width:420px;
+    margin-left: 20px;
 }
