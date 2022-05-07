@@ -6,6 +6,7 @@ import { useParams,Link } from "react-router-dom";
 import { BiChevronRight } from "react-icons/bi";
 
 
+
 function Productpage()
 {
     let {name} = useParams();
@@ -179,8 +180,10 @@ function Productpage()
      <div><p className="description_prdt">{data.description}</p></div>
      
      <div><p>₹{data.price}</p></div>
-     <div><button className="select_option_prdt-btn">select option</button></div>
-     <div>Read more</div>
+     <div>
+         <Link className="select_option_prdt-btn" to={`/SeprateProduct/:${data._id}`}  >select option</Link>
+     </div>
+     <div className="read_more">Read more</div>
  </div>
  )
  }

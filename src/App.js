@@ -16,7 +16,7 @@ import { AthleticPlan } from "./components/mealplans/athleticmealplan"
 import { KetoMealPlan } from "./components/mealplans/ketomealplan.jsx"
 import { Health_coaching } from "./components/Health_coaching.jsx";
 
-
+import { SeprateProduct } from './components/singleproductpage/seprateproduct';
 
 
 
@@ -35,7 +35,7 @@ function App() {
         <Route path='/Ketomealplan' element={<KetoMealPlan></KetoMealPlan>} />
 
         <Route path='/healthcoaching' element={< Health_coaching />} />
-
+        <Route path='/SeprateProduct/:id' element={<   SeprateProduct />} />
 
 
       </Routes>
