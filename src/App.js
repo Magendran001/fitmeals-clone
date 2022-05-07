@@ -3,6 +3,7 @@ import './App.css';
 import Header_fit_meals from './components/header';
 import Bodypart from './components/body';
 import Footer_part from './components/footer';
+import { ProductCart } from './components/cart/productcart';
 import {
   Routes,
   Switch,
@@ -15,6 +16,8 @@ import { MaintenanceMealPlan } from "./components/mealplans/maintenancemealplan"
 import { AthleticPlan } from "./components/mealplans/athleticmealplan"
 import { KetoMealPlan } from "./components/mealplans/ketomealplan.jsx"
 import { Health_coaching } from "./components/Health_coaching.jsx";
+import { Login } from './components/login';
+import { LostPassword } from './components/lost-password';
 
 import { SeprateProduct } from './components/singleproductpage/seprateproduct';
 
@@ -36,6 +39,9 @@ function App() {
 
         <Route path='/healthcoaching' element={< Health_coaching />} />
         <Route path='/SeprateProduct/:id' element={<   SeprateProduct />} />
+        <Route path='/loginpage' element={< Login />} />
+        <Route path='/lostpassword' element={< LostPassword />} />
+        <Route path='/cartpage' element={< ProductCart />} />
 
 
       </Routes>

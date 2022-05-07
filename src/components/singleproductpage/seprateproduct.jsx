@@ -95,7 +95,7 @@ const [relateproduct,setRelateproduct]=useState([
              <h2>About This Product</h2> 
              
              <p>Quantity</p>
-             <div> <span><input type="radio" defaultChecked="ture"/> </span> <span> {data.quantity} g</span></div>
+             <div className="radio_check"> <span><input type="radio" defaultChecked="ture"/> </span> <span> {data.quantity} g</span></div>
              <div><span><input onChange={(e)=>{
                  setProcounter(e.target.value)
              }} type="number" defaultValue={1} className="increaseProduct" /></span><span><button  className="addtocartbutt">Add to cart</button></span></div>

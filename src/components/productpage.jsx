@@ -26,7 +26,8 @@ function Productpage()
             
         async function getallprdtdata()
         {
-            let x = await fetch(`http://localhost:9083/${productpage}`);
+            // https://secret-basin-20477.herokuapp.com/product
+            let x = await fetch(`https://secret-basin-20477.herokuapp.com/${productpage}`);
              let y = await x.json();
              setproduct(y)
              console.log("jj")
@@ -58,7 +59,7 @@ function Productpage()
             
         async function getdata()
         {
-            let x = await fetch(`http://localhost:9083/products/${currentpagetitle}`);
+            let x = await fetch(`https://secret-basin-20477.herokuapp.com/products/${currentpagetitle}`);
              let y = await x.json();
              setproduct(y)
             console.log(products,"kkkkkkkk")
@@ -76,7 +77,7 @@ function Productpage()
 
         async function getsortdata()
         {
-            let x = await fetch(`http://localhost:9083/products/${currentpagetitle}/${sort}`);
+            let x = await fetch(`https://secret-basin-20477.herokuapp.com/products/${currentpagetitle}/${sort}`);
              let y = await x.json();
              setproduct(y)
             
