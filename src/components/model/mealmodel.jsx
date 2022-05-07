@@ -30,7 +30,7 @@ function Productsmodel()
               <div className="link_to_prdt_page"><Link to="/productpage/Vegan Sweets">Vegan Sweets</Link></div>
               <div className="link_to_prdt_page"><Link to="/productpage/Low Calorie Sauces">  Low-Cal Sauces</Link></div>
               <div className="link_to_prdt_page"> <Link to="/productpage/Nut Butters">Nut Butters</Link></div>
-              <div className="link_to_prdt_page"><Link to="/productpage/Fresh Bakes">Fresh Bakes</Link></div>
+              <div className="link_to_prdt_page"><Link to="/productpage/Fresh bakes">Fresh Bakes</Link></div>
             
               
               
