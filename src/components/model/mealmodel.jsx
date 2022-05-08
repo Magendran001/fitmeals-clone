@@ -42,11 +42,13 @@ function Productsmodel()
 
 function Aboutmodel()
 {
-    return (<div className="meal_plans_model">About Us<span className="arrowleft_shown"><BiChevronRight/></span>
+    return (
+    
+    <div className="meal_plans_model">About Us<span className="arrowleft_shown"><BiChevronRight/></span>
 
           <div className="meals_plan_hover">
               <div>
-              <div><button>Our story</button></div>
+              <div><button> <Link to={"/ourstory"}>Our story</Link></button></div>
               <div><button> FAQ</button></div>
               <div> <button>Testimonals</button></div>
               

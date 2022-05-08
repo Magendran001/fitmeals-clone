@@ -2,7 +2,7 @@ import "../components/css/login.css"
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-
+import axios from "axios"
 
 const Btn = styled.button`
     color: whitesmoke;
@@ -41,7 +41,16 @@ setCred({
 
 const passCred=(e)=>{
     e.preventDefault()
-    console.log(cred)
+    axios.post('https://secret-basin-20477.herokuapp.com/user/login', {
+        email: cred.email,
+        password: cred.passcode
+      })
+      .then(function (response) {
+        console.log("kkkk");
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
 }
     return(
         <div className="login_form">

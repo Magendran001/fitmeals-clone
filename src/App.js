@@ -18,7 +18,7 @@ import { KetoMealPlan } from "./components/mealplans/ketomealplan.jsx"
 import { Health_coaching } from "./components/Health_coaching.jsx";
 import { Login } from './components/login';
 import { LostPassword } from './components/lost-password';
-
+import {AboutUs} from "./components/AboutUs"
 import { SeprateProduct } from './components/singleproductpage/seprateproduct';
 
 
@@ -42,7 +42,7 @@ function App() {
         <Route path='/loginpage' element={< Login />} />
         <Route path='/lostpassword' element={< LostPassword />} />
         <Route path='/cartpage' element={< ProductCart />} />
-
+        <Route path='/ourstory' element={< AboutUs />} />
 
       </Routes>
 
