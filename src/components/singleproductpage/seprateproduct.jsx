@@ -106,6 +106,8 @@ const [relateproduct,setRelateproduct]=useState([
                  console.log(tokenkey)
                 if(tokenkey==null){
 navigate("/loginpage")
+                }else{
+                    navigate("/cartpage")   
                 }
             }} className="addtocartbutt">Add to cart</button ></div>
              <p>Categories:{data.categories}, Products</p>    
