@@ -1,6 +1,7 @@
 import "../components/css/login.css"
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 
 const Btn = styled.button`
@@ -23,16 +24,35 @@ const Btn = styled.button`
 `;
 
 function Login(){
+
+
+    const [cred,setCred]=useState({
+        passcode:"",
+        email:""
+    })
+
+
+const getCred=(e)=>{
+const {id,value}=e.target;
+setCred({
+    ...cred,[id]:value
+})
+}
+
+const passCred=(e)=>{
+    e.preventDefault()
+    console.log(cred)
+}
     return(
         <div className="login_form">
               <h1>Login</h1>
               <div className="form_input">
                   <label>Username or email address<span>*</span></label><br />
-                  <input type="text"></input><br />
+                  <input onChange={getCred} onBlur={getCred} id="email" type="text"></input><br />
                   <label>Password<span>*</span></label><br />
-                  <input type="password"></input>
+                  <input onChange={getCred} onBlur={getCred}  id="passcode" type="password"></input>
                   <div className="btn">
-                    <Btn className="butn">Log in</Btn>
+                    <Btn onClick={passCred} className="butn">Log in</Btn>
                     <input className="check" type="checkbox"></input>
                     <label className="label_btn">Remember Me</label>
                   </div>
