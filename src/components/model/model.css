@@ -50,8 +50,11 @@
     height: 40px;
     border-radius:50px;
     border: none;
+    background-color: white !important;
    }
-
+   .meals_plan_hover button:hover{
+    background-color: lightgreen !important;
+   }
    .meals_plan_hover a{
 
       text-decoration: none;
