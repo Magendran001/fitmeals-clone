@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
 import "./seprateproduct.css"
+import { useNavigate } from "react-router-dom";
 import { useParams,Link } from "react-router-dom";
 import axios from "axios"
-
+import { useDispatch,useSelector } from "react-redux";
 import styled from "styled-components"
 const MainImage=styled.div`
     background-image: ${(props) => `url(${props.maindata})`};
@@ -10,7 +11,10 @@ const MainImage=styled.div`
 `
 export const SeprateProduct=()=>{
 
-
+    const tokenkey=useSelector((store)=>
+    store.token.token
+)
+const navigate=useNavigate();
     const [data,setData]=useState({
         "title":"Arrabiata Sauce",
     "image":"https://www.fitmeals.co.in/wp-content/uploads/2021/06/arrabbiata-sauce-680x900-1.jpg",
@@ -98,7 +102,12 @@ const [relateproduct,setRelateproduct]=useState([
              <div className="radio_check"> <input type="radio" defaultChecked="ture"/>  {data.quantity} gm</div>
              <div className="maya"><input  onChange={(e)=>{
                  setProcounter(e.target.value)
-             }} type="number" defaultValue={1} className="increaseProduct" /><button  className="addtocartbutt">Add to cart</button></div>
+             }} type="number" defaultValue={1} className="increaseProduct" /><button  onClick={()=>{
+                 console.log(tokenkey)
+                if(tokenkey==null){
+navigate("/loginpage")
+                }
+            }} className="addtocartbutt">Add to cart</button ></div>
              <p>Categories:{data.categories}, Products</p>    
     </div>
 
@@ -130,7 +139,7 @@ const [relateproduct,setRelateproduct]=useState([
              </div>
              <h2>{e.title}</h2>
              <h2>₹{e.price.toFixed(2)}</h2>
-             <button>Select options</button>
+             <button >Select options</button>
              <p>Read more</p>
          </div>
      })  
