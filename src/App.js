@@ -20,9 +20,9 @@ import { Login } from './components/login';
 import { LostPassword } from './components/lost-password';
 import {AboutUs} from "./components/AboutUs"
 import { SeprateProduct } from './components/singleproductpage/seprateproduct';
-
-
-
+import { Second } from './components/second';
+import  Test  from './components/Test';
+import  Home  from './components/blogHome';
 function App() {
   return (
     <div className="App">
@@ -43,7 +43,9 @@ function App() {
         <Route path='/lostpassword' element={< LostPassword />} />
         <Route path='/cartpage' element={< ProductCart />} />
         <Route path='/ourstory' element={< AboutUs />} />
-
+        <Route path='/faq' element={< Second />} />
+        <Route path='/test' element={< Test />} />
+        <Route path='/bloghome' element={< Home />} />
       </Routes>
 
       <Footer_part />
