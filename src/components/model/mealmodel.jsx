@@ -48,14 +48,9 @@ function Aboutmodel()
 
           <div className="meals_plan_hover">
               <div>
-              <div><button  > <Link  to={"/ourstory"}>Our story</Link></button></div>
+              <div><button> <Link  to={"/ourstory"}>Our story</Link></button></div>
               <div><button><Link to={"/faq"}>FAQ</Link></button></div>
-              
               <div><button><Link to={"/test"}>Testimonals</Link></button></div>
-             
-              
-              
-              
               </div>
           </div>
     </div>)
