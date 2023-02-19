@@ -26,7 +26,7 @@ import  Home  from './components/blogHome';
 function App() {
   return (
     <div className="App">
-      <Header_fit_meals />
+     
 
       <Routes>
         <Route path='/' element={<><Bodypart /></>}></Route>
